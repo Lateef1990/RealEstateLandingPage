@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1a2e35;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a,
+input,
+select {
+  outline-color: #4caf50;
+}
+
+@media (max-width: 640px) {
+  html { scroll-behavior: auto; }
+}
+
+/* Mobile menu transition */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.mobile-menu.open {
+  max-height: 300px;
+}
